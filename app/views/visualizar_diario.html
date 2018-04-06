@@ -1,0 +1,50 @@
+<script src="app/controllers/visualizar_diario.js"></script>
+<div id="visualizar_diario" class="pagina" style="margin-top: 2em;">
+    <!-- <div class="row" style="margin-top: 1em;">
+        <div class="large-2 columns">
+            <a href="#" onclick="getSelectedRows()" class="button square">Salvar Seleção</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <table id="jqGrid"></table>
+            <div id="jqGridPager"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-1 columns left">
+            <label>Início
+                <input type="text" id="inicio_row" placeholder="Início" />
+            </label>
+        </div>
+        <div class="large-1 columns left">
+            <label>Fim
+                <input type="text" id="fim_row" placeholder="Fim" />
+            </label>
+        </div>
+        <div class="large-2 columns left">
+            <a href="#" onclick="selectRows()" class="button square" style="margin-top: 1.3em;">Selecionar Linhas</a>
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="large-12 columns" style="height: 32em;">
+            <div id="grid1" style="height: 100%;"></div>
+            <!-- <div id="grid2" style="position: absolute; right: 0px; width: 49.9%; height: 300px;"></div> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-2 columns">
+            <a href="#" data-reveal-id="myModal" onclick="getSelectedRows()" class="button square">Selecionar Linhas</a>
+        </div>
+        <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <div class="row">
+                <div id="hst_diario"></div>
+            </div>
+            <div class="row">
+                <div class="large-4 columns">
+                    <a href="#" onclick="salvar_selecao()" class="button square">Salvar Folha de Trabalho</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

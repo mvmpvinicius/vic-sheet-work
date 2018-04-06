@@ -1,0 +1,51 @@
+<script src="app/controllers/caderno_notas.js"></script>
+<div id="caderno_notas" class="pagina" style="height: 20em;">
+    <div class="row" style="margin-top: 6em;">
+        <div class="large-11 push-1 columns">
+            <ul class="tabs" data-tab>
+                <li class="tab-title active"><a href="#panel1">Folha 1</a></li>
+                <li class="tab-title"><a href="#panel2" style="margin: -2em 0em 0em -60em">Folha 2</a></li>
+                <li class="tab-title"><a href="#panel3" style="margin: -4em 0em 0em -57em">Folha 3</a></li>
+            </ul>
+            <div class="tabs-content">
+                <div class="content active" id="panel1">
+                    <div id="panel1b" class="content active">
+                        <a href="#" onclick="salvar_caderno_notas(0)" class="button square">Salvar Folha de Trabalho</a>
+                        <a href="#" onclick="salvar_excel(0)" class="button square right">Exportar Excel</a>
+                        <!-- <a href="#" id="caderno_notas_upload" class="button square">Importar Excel</a> -->
+                        <form id="caderno_notas_upload" method="post" action="app/ajax/caderno_notas_upload.php" enctype="multipart/form-data" class="right">
+                            <div id="importar_caderno_notas_drop">
+                                <!-- Arraste aqui -->
+                                <a href="#" class="button square">Importar Excel</a>
+                                <input type="file" name="upl_importar_caderno_notas" multiple />
+                            </div>
+                        </form>
+                        <div id="hst_caderno_notas_0"></div>
+                    </div>
+                </div>
+                <div class="content" id="panel2">
+                    <div id="panel2b" class="content">
+                        <a href="#" onclick="salvar_caderno_notas(1)" class="button square">Salvar Folha de Trabalho</a>
+                        <a href="#" onclick="salvar_excel(1)" class="button square">Salvar em Excel</a>
+                        <div id="hst_caderno_notas_1"></div>
+                    </div>
+                </div>
+                <div class="content" id="panel3">
+                    <div id="panel3b" class="content">
+                        <a href="#" onclick="salvar_caderno_notas(2)" class="button square">Salvar Folha de Trabalho</a>
+                        <a href="#" onclick="salvar_excel(2)" class="button square">Salvar em Excel</a>
+                        <div id="hst_caderno_notas_2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="large-1 pull-11 columns">
+            <div class="row">
+                <input type="text" placeholder="Pesquisa" />
+            </div>
+            <div class="row">
+                <div id="caderno_notas_tree"></div>
+            </div>
+        </div>
+    </div>
+</div>

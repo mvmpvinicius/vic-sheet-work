@@ -1,0 +1,18 @@
+<script src="app/controllers/importar_diario.js"></script>
+<div id="importar_diario" class="pagina">
+    <div class="row" style="height: 40em;">
+        <div class="large-12 columns" style="margin-top: 1em;">
+            <div class="row">
+                <div class="large-12 columns">
+                    <form id="importar_diario_upload" method="post" action="app/ajax/importar_diario_upload.php" enctype="multipart/form-data" style="margin: auto;">
+                        <div id="importar_diario_drop">
+                            <!-- Arraste aqui -->
+                            <a>Importar</a>
+                            <input type="file" name="upl_importar_diario" multiple />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<script src="app/controllers/manual_controlo_interno.js"></script>
+<div id="manual_controlo_interno" class="pagina">
+    <div class="row" style="height: 40em;">
+        <div class="large-12 columns" style="margin-top: 1em;">
+            <div class="row">
+                <div class="large-12 columns">
+                    <form id="manual_controlo_interno_upload" method="post" action="app/ajax/manual_controlo_interno_upload.php" enctype="multipart/form-data">
+                        <div id="manual_controlo_interno_drop">
+                            Arraste aqui
+                            <a>Browse</a>
+                            <input type="file" name="upl_manual_controlo_interno" multiple />
+                        </div>
+                        <!-- <ul>
+                            The file uploads will be shown here
+                        </ul> -->
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-10 push-2 columns" style="margin-top: 2em;">
+                    <!-- <h4 id="titulo_nota">Nota</h4> -->
+                    <!-- <div id="hst_caderno_notas"></div> -->
+                    <!-- <iframe class="doc" src="https://docs.google.com/gview?url=file:///C:/xampp/htdocs/www/Vicente/aaa.doc&embedded=true" style="height: 50em; width: 100%;"></iframe> -->
+                </div>
+                <div class="large-2 pull-10 columns" style="margin-top: 2em;">
+                    <div id="manual_controlo_interno_tree"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

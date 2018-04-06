@@ -1,0 +1,32 @@
+.icon.large {
+    font-size: 1.8rem;
+}
+
+.icon.medium {
+    font-size: 1.8rem;
+}
+
+.icon.small {
+    font-size: 1.8rem;
+}
+
+.button.square {
+    padding-top: 0.6rem;
+    padding-right: 1.2rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1.2rem;
+}
+
+#manuais_internos_tree table {
+    border: none;
+}
+
+#myDropZone {
+    height: 13em;
+    /*width: 50%;*/
+    border: 2px dashed #BBB;
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    color: #BBB;
+}
